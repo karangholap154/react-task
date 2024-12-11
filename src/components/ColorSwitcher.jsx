@@ -9,7 +9,7 @@ const ColorSwitcher = () => {
       <h2>Color Switcher</h2>
       <div
         className="color-box"
-        style={{ backgroundColor: bgColor, height: "100px", width: "400px", marginBottom: "10px" }}
+        style={{ backgroundColor: bgColor, height: "200px", width: "400px", marginBottom: "10px" }}
       />
       <div className="button-group">
         {colors.map((color) => (
