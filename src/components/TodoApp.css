@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f6f8;
+    color: #2d3436;
+  }
+  
+  /* App Container */
+  .App {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Heading */
+  .App h1 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #3742fa;
+    margin-bottom: 20px;
+  }
+  
+  /* Task Form */
+  .task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #dfe4ea;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f1f2f6;
+  }
+  
+  .task-form button {
+    width: 20%;
+    padding: 10px;
+    background: #3742fa;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-form button:hover {
+    background: #5352ed;
+    transform: scale(1.05);
+  }
+  
+  /* Task Section */
+  .task-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .uncompleted {
+    background: #f1f2f6;
+  }
+  
+  .completed {
+    background: #e3fcec;
+    border-top: 2px solid #2ed573;
+  }
+  
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Single Task */
+  .task {
+    background: #ffffff;
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2f3542;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  /* Checkbox */
+  .task-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  /* Task Actions (Checkbox + Edit Button) */
+  .task-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .task-button {
+    padding: 6px 12px;
+    font-size: 12px;
+    background-color: #3742fa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-button:hover {
+    background-color: #5352ed;
+  }
+  
+  /* Edit Modal */
+  .edit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .edit-modal input {
+    padding: 10px;
+    border: 1px solid #dfe4ea;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f1f2f6;
+  }
+  
+  .edit-modal button {
+    padding: 10px;
+    background: #3742fa;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-modal button:hover {
+    background: #5352ed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .App {
+      padding: 15px;
+      max-width: 600px;
+    }
+  
+    .task-form {
+      flex-direction: column;
+    }
+  
+    .task-form input {
+      width: 100%;
+    }
+  
+    .task-form button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .task {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .App {
+      max-width: 400px;
+      padding: 10px;
+    }
+  
+    .task-form input,
+    .task-form button {
+      width: 100%;
+    }
+  }
+  
