@@ -12,6 +12,9 @@ const Home = () => {
     { id: 7, name: "Color Switcher", path: "/color-switcher" },
     { id: 8, name: "Accordion Component", path: "/accordion" },
     { id: 9, name: "Image Carousel", path: "/carousel" },
+    { id: 10, name: "Weather App", path: "/weather" },
+    { id: 11, name: "Light Dark Mode App", path: "/lightdarkmode"},
+    { id: 12, name: "Click Tracker", path: "/clicktracker"},
     { id: 13, name: "Addition App", path: "/addition" },
   ];
 

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const ImageCarousel = () => {
   const images = [
-    "https://picsum.photos/201/300",
-    "https://picsum.photos/200/301",
-    "https://picsum.photos/200/302",
+    "https://via.placeholder.com/300x200?text=Image+1",
+    "https://via.placeholder.com/300x200?text=Image+2",
+    "https://via.placeholder.com/300x200?text=Image+3",
   ];
   const [current, setCurrent] = useState(0);
 
