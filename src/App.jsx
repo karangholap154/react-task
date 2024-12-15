@@ -15,6 +15,8 @@ import AdditionApp from "./components/AdditionApp";
 import "./styles.css"
 import LightDarkModeApp from "./components/LightDarkModeApp";
 import ClickTracker from "./components/ClickTracker";
+import TimerCounter from "./components/TimerCounter";
+import FocusInput from "./components/FocusInput";
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
         <Route path="/lightdarkmode" element={<LightDarkModeApp/>}/>
         <Route path="/clicktracker" element={<ClickTracker/>} />
         <Route path="/addition" element={<AdditionApp />} />
+        <Route path="/timercounter" element={<TimerCounter/>}/>
+        <Route  path="/focusinput" element={<FocusInput/>}/>
       </Routes>
     </Router>
   );

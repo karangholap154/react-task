@@ -16,6 +16,8 @@ const Home = () => {
     { id: 11, name: "Light Dark Mode App", path: "/lightdarkmode"},
     { id: 12, name: "Click Tracker", path: "/clicktracker"},
     { id: 13, name: "Addition App", path: "/addition" },
+    { id: 14, name: "Timer Counter App", path: "/timercounter" },
+    { id: 15, name: "Focus Input", path: "/focusinput"},
   ];
 
   return (
